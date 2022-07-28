@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Book Management Application</title>
+    <script src="src/model/Book.js"></script>
+  </head>
+  <center><body>
+    <h1>CRUD Operations - Book Management Application</h1>
+    <hr>
+    <menu>
+      <ul style="list-style-type: none; margin: 0; padding: 0">
+        <li style="margin-bottom: 1rem">
+          <a href="listBooks.html"><button type="button">List all books</button></a>
+        </li>
+        <li style="margin-bottom: 1rem">
+          <a href="createBook.html"><button type="button">Add a new book</button></a>
+        </li>
+        <li style="margin-bottom: 1rem">
+          <a href="updateBook.html"><button type="button">Update a book</button></a>
+        </li>
+        <li style="margin-bottom: 1rem">
+          <a href="deleteBook.html"><button type="button">Delete a book</button></a>
+        </li>
+        <li style="margin-bottom: 1rem"><button type="button" onclick="Book.clearData()">Clear database</button></li>
+        <li>
+          <button type="button" onclick="Book.createTestData()">Create test data</button>
+        </li>
+      </ul>
+    </menu>
+  </body></center>
+</html>
