@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Management App</title>
+    <script src="src/controller/initialize.js"></script>
+    <script src="src/model/Book.js"></script>
+    <script src="src/view/updateBook.js"></script>
+    <script>
+      window.addEventListener('load', init.view.updateBook.setupUI);
+    </script>
+  </head>
+  <body>
+    <h1>Book Management App: Update a book record</h1>
+    <form id="Book" action="">
+      <p>
+        <label
+          >Select book:
+          <select name="selectBook">
+            <option value="">---</option>
+          </select>
+        </label>
+      </p>
+      <p>
+        <label>ISBN: <input name="isbn" readonly="readonly" /></label>
+      </p>
+      <p>
+        <label>Title: <input name="title" /></label>
+      </p>
+      <p>
+        <label>Year: <input name="year" /></label>
+      </p>
+      <p>
+        <label>Author: <input name="author" /></label>
+      </p>
+      <p><button type="button" name="commit">Save Changes</button></p>
+    </form>
+    <nav><a href="index.html">Back to main menu</a></nav>
+  </body>
+</html>
